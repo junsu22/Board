@@ -1,0 +1,35 @@
+로그인 페이지 만들기 
+
+<body>
+	<script>location.href='login.jsp';</script>
+</body>
+
+
+-> 404 에러 : 이유 , login.jsp 로 이동해야 하는데 파일이 없다.
+인코딩언어는 utf-8 로 바꿔준다 
+
+타이틀 명 바꿔주고 
+파일 코드를 전체 복사 해서 
+새로만든 파일 login.jsp 에 붙여넣기 해준다.
+이제 여기서는 내용 만 고치면 되는것이구 
+
+
+디자인을 위해 부트스트랩을 다운로드 해준다.
+https://getbootstrap.com/docs/3.3/getting-started/#download
+jsp 폴더에 압축을 풀고 , js css font 폴더 복사해서 jsp 파일 동일 위치에 붙여넣기 해준다.
+코드 작성
+<meta name ="viewport" content="width=device-width", initial-scale="1">
+... 스타일을 담당해줄 css 추가
+<link rel="stylesheet" href="css/bootstrap.css">
+<title> 
+
+... 애니메이션을 담당해줄 부트스트랩js 파일, jqeury script추가 
+<body>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</body>
+
+<script src="js/bootstrap.js"></script>
+
+
+-> 로그인 페이지 가서 새로고침 하고 404 에러가 사라진 빈 화면 나오는 지 확인
+(디자인을 아직 안했으니 흰 화면 )

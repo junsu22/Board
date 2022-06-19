@@ -1,0 +1,84 @@
+MySQL 검색
+https://dev.mysql.com/downloads/mysql/5.7.html
+-> community - download
+맞는 운영체제 다운로드
+(용량이 높은걸로)
+
+developer default -> next ...
+
+
+설치 하고 기본 포트번호 3306
+
+루트계정 
+왠만해서 잃어버리지 않도록 해야한다.
+설치 이어서 해줌. 
+root /pw check 
+
+workbench / shell 은 사용 체크 해제
+
+
+시작 창 가면 mySQL 커맨드라인 생겼음 
+커맨드라인 접속
+
+설정했던 패스워드 입력해서 로그인 
+
+> 
+CREATE DATABASE BBS;
+(데이터 베이스 생성해주기)
+
+USE BBS;
+
+
+(테이블 만들기 ,정보 입력)
+
+mysql> CREATE TABLE USER(
+         -> userID VARCHAR(20),
+         -> userPassword VARCHAR(20),
+         -> userName VARCHAR(20),
+         -> userGender VARCHAR(20),
+         -> userEmail VARCHAR(50)
+         -> PRIMARY KEY (userID)
+         -> );
+
+
+
+show tables;
+
+desc user;
+
+만든것 속성이 제대로 들어가 있는지 확인
+
+
+데이터를 넣어 줌으로써 테스트를 해봄.
+INSERT INTO USER VALUES('junsu', '123456', 'junsu', 'man', 'okss22s@hanmail.net');
+
+
+select * from user;
+
+
+commit;
+
+desc user;
+
+
+
+-이클립스 돌아와서 
+java resource 에 
+user 패키지 만들어 주기 
+User 클래스파일 만들어 주기
+
+
+데이터 다 넣어 주기 
+package user;
+
+public class User {
+	private String userID;
+	private String userPassword;
+	private String userName;
+	private String userGender;
+	private String userEmail;
+}
+
+JSP 서버에서 만들 수 있는 형태로 만들기 위해 
+우측 클릭 source ->generate getter and setter
+를 사용해 전부 함수로 만들어 준다.
