@@ -10,7 +10,7 @@
 <title>JSP 게시판 웹 사이트</title>
 </head>
 <body>
-	<nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed"
 				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -35,7 +35,6 @@
 						<li><a href="join.jsp">회원가입</a></li>
 					</ul></li>
 			</ul>
-
 		</div>
 	</nav>
 	<div class="container">
@@ -62,5 +61,5 @@
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
-</body>
+	</body>
 </html>
